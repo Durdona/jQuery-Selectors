@@ -1,4 +1,4 @@
-/******************* Selecting Nodes by Tag Name *****************/
+			/******************* Selecting Nodes by Tag Name *****************/
 
 $(document).ready(function(){
 	var list = $('li'); //selects all <li> tags
@@ -19,7 +19,7 @@ $(document).ready(function(){
 	$('li, p').css('background', '#EFEFEF'); //selecting multiple tags 
 });
 
-/******************* Selecting Nodes by ID *****************/
+			/******************* Selecting Nodes by ID *****************/
 
 $(document).ready(function(){
 	$('#h2Tag').css('color', 'blue'); //instead of document.getElementByID('#h2Tag')
@@ -33,7 +33,8 @@ $(document).ready(function(){
 	$('#article p').css({'background-color': 'crimson', 'padding': '10px', 'text-align': 'center'}); //selects paragraph inside an article with article ID 
 
 });
-/******************* Selecting Nodes by Class Name *****************/	
+
+			/******************* Selecting Nodes by Class Name *****************/	
 // $('.span');  $('p .span');  $('a.secondSpan'); $('')
 
 
@@ -49,7 +50,7 @@ $(document).ready(function(){
 });
 
 
-/******************* Selecting Nodes by Attribute Value & Input Nodes *****************/
+			/******************* Selecting Nodes by Attribute Value & Input Nodes *****************/
 // $('a[title]') -> selects all <a> elements that have a title attribute;  $('th[title]'); $('th[title="Sample Title"]') -> searching a specific title; $('th[title="header"]') -> selects all headers with title 'header'
 
 $(document).ready(function(){
@@ -108,7 +109,7 @@ $(document).ready(function(){
 	$("input[type != 'text']").css('background', 'purple')    //I could do smth. like this: $("input[type != 'text']").next().append("<b>; with no row title </b> ");
 });
 
-/******************* Additional Selectors Features *****************/
+			/******************* Additional Selectors Features *****************/
 // :contains() will select elements that match the contents within the contains exception: example $('div:contains("sample")');  -> selects div's that contain the text 'sample' (case sensitive)
 $(document).ready(function(){
 	$('div:contains("sample")').fadeToggle(9000);
@@ -162,7 +163,6 @@ $(document).ready(function(){
 <input type="button" value="National Holidays"/>
 <input type="button" value="Local Holidays"/>
 */
-
 
 
 // [attribute*="value"] will select all elements with an attribute that contains the stated value:   $('input[value*="Holidays"]') -> selects any input element whose value attribute contains "Holiday"
