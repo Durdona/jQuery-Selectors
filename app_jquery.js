@@ -37,8 +37,6 @@ $(document).ready(function(){
 			/******************* Selecting Nodes by Class Name *****************/	
 // $('.span');  $('p .span');  $('a.secondSpan'); $('')
 
-
-
 $(document).ready(function(){
 	$('.span').each(function(){   //selects all classes with span 
 		$(this).fadeToggle(4000);
@@ -144,7 +142,6 @@ $(document).ready(function(){
 });
 
 
-
 // [attribute^="value"] will select all elements with an attribute that begins with stated value:   $('input[value^="Holidays"]') -> selects any input element whose value attribute begins with "Holiday"
 /*
 <input type="button" value="Holidays of US" />
@@ -154,7 +151,6 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$('input[value^="Holidays"]').animate({opacity: "0.30", height: ["easeOutBounce"]}, 3000);
 });
-
 
 
 // [attribute$="value"] will select all elements with an attribute that ends with stated value:   $('input[value$="Holidays"]') -> selects any input element whose value attribute ends with "Holiday"
