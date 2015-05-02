@@ -167,3 +167,32 @@ $(document).ready(function(){
 <input type="button" value="National Holidays 2015"/>
 <input type="button" value="Local Holidays 2015"/>
 */
+
+
+// Child filter Selectors
+/*  <div> Remember!
+            <ul>
+                <li>
+                    <ol id="nestedtList">
+                        <li>Start with the function keyword</li>
+                        <li>Inputs go between ()</li>
+                        <li>Actions go between {}</li>
+                        <li>It should fade away. I am the target!</li>  
+                    </ol>
+                </li>
+                <li>Inputs are separated by commas.</li>
+                <li>Inputs can include other functions!</li>
+            </ul>
+        </div> 
+*/        
+	$(document).ready(function{
+		var $target = $('#nestedtList li:nth-child(4)'); // if $ is missing before'target' it means it is not defined. Don't forget $ before variables when assigning value to them in jQuery
+		$target.fadeOut('fast');
+	});
+
+
+
+
+
+
+
