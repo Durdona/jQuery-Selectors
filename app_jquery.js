@@ -186,9 +186,9 @@ $(document).ready(function(){
         </div> 
 */        
 	$(document).ready(function{
-		var $target = $('#nestedtList li:nth-child(4)'); // if $ is missing before'target' it means it is not defined. Don't forget $ before variables when assigning value to them in jQuery
+		var $target = $('#nestedtList li:nth-child(4)'); // if $ is missing before'target' it means this variable is not defined. Don't forget $ before variables when assigning a value to them in jQuery
 		$target.fadeOut('fast');
-	});
+	});// variable $target is assigned a value of HTML element 
 
 
 
