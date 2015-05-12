@@ -205,6 +205,69 @@ $(document).ready(function(){
 		    });
 		});
 
+// Review 
+
+// Basic Selectors 
+   $("document").ready(function() {
+            //$("p").css("border", "3px solid red");
+            //$(".a").css("border", "3px solid red");
+            //$("#example").css("border", "3px solid red");
+            //$("p.b").css("border", "3px solid red");
+        });
+        
+// Basic Filters 
+$("document").ready(function() {
+            //$("#example p:first").css("border", "3px solid red");
+            //$("#example p:last").css("border", "3px solid red");
+            //$("#example p:even").css("border", "3px solid red");
+            //$("#example p:odd").css("border", "3px solid red");
+            //$("#example .a:first").css("border", "3px solid red");
+            //$("#example .b:even").css("border", "3px solid red");
+            //$("#example p:gt(1)").css("border","3px solid red");
+            //$("#example p:not(p:eq(2))").css("border", "3px solid red");
+        });
+        
+// Advanced Selectors 
+$("document").ready(function() {
+        // The child selector "parent > child" selects "child" elements that are
+        // immediate descendants of the "parent"
+        //$("div > p").css("border", "3px solid red");
+        
+        // The descendant selector "ancestor descendant" selects "descendant" elements
+        // as long as they have an "ancestor" element somewhere above them
+        //$("div p.a").css("border", "3px solid red");
+        
+        // The next adjacent selector "prev + next" selects the "next" element if it
+        // is immediately preceded by a "prev" element
+        //$("ul + div").css("border", "3px solid red");
+        
+        // Next sibling selector "prev ~ siblings" selects all "siblings" elements that come
+        // after a "prev" element
+        //$("#para1 ~ p").css("border", "3px solid red");
+    });
+    
+    
+// Advanced Filter Selectors 
+// Attribute Filters
+    $("document").ready(function() {
+    //        $("p[class]").css("border", "3px solid red");
+    //        $("p[id=para1]").css("border", "3px solid red");
+    //        $("p[id^=para]").css("border", "3px solid red");
+    //        $("p[id^=para][lang*=en-]").css("border", "3px solid red");
+    });
+    
+// Using Child and Content Filters
+	 $("document").ready(function() {
+            //$("p:contains('3')").css("border", "3px solid red");
+            //$("p:parent").css("border", "3px solid red");
+            //$("div:has(p[class=a])").css("border", "3px solid red");
+            
+            //$("div p:first-child").css("border", "3px solid red");
+            //$("div p:last-of-type").css("border", "3px solid red");
+            //$("div p:nth-child(3)").css("border", "3px solid red");
+            //$("div p:nth-child(2n)").css("border", "3px solid red");
+        });
+
 
 
 
