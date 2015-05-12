@@ -271,6 +271,31 @@ $("document").ready(function() {
         });
 
 
+// Traversing DOM elements
+ $("document").ready(function() {
+            // The children() function retrieves the immediate (that is, first-level down) child
+            // elements of the matched set, excluding text nodes.
+            //$("#example").children().css("border", "3px solid red");
+
+//            var elem = $("#para1");
+//            elem.prev().css("border", "3px solid red");
+//            elem.next().css("border", "3px solid green");
+//            elem.parents().css("border", "3px solid blue");
+//            elem.parentsUntil($("body")).css("border", "3px solid blue");
+            
+            // use the find function to locate content within particular elements
+            //$("#example").find("#para4").css("border", "3px solid red");
+
+            // use the each function to iterate over a set of elements and operate on them
+//            var leftmargin = 0;
+//            var border = 3;
+//            $("#example p").each(function(index, element) {
+//                $(element).css("border", border+"px solid red")
+//                          .css("margin-left", leftmargin);
+//                border += 2;
+//                leftmargin += 10;
+//            });
+    });
 
 
 
