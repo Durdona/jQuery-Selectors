@@ -297,5 +297,22 @@ $("document").ready(function() {
 //            });
     });
 
+//Just adding selectors which haven't been listed here yet. Theya are examples from my other projects 
+// 1.
+	$('#form').submit(function(event) {
+		$(':input[required]').each(function(){ // targets each input with a 'required' value 
+			if($(this).val() === ''){
+				$(this).after('<div class="error>"This is a required field</div>'); 
+			}
+		}); // loop through each 'required' value
+	}); // on submit 
 
+// 2.
+	 $('img[alt~="CSS3"]').hover(function(){   // targets an image with CSS3 alt attribute 
+ 		// duration: 5000,
+ 		$(this).css('transform', 'rotate(90deg)');
+ 	}, 
+ 	function() {
+ 		$(this).css('transform', 'rotate(0deg)');
+ 	});
 
